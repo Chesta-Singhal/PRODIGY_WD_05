@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto-Location Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+  <div class="weather-card">
+    <button id="modeToggle" onclick="toggleMode()">🌗 Toggle Mode</button>
+    <h2>🌤️ Weather App</h2>
+
+    <input type="text" id="cityInput" placeholder="Enter City Name" />
+    <button onclick="getWeather()">Search</button>
+    <button onclick="getWeatherByLocation()">📍 Use My Location</button>
+
+    <div id="popup" class="popup"></div>
+
+    <div id="weatherDisplay" class="weather-display hidden">
+      <h3 id="cityName"></h3>
+      <img id="weatherIcon" src="" alt="Weather Icon" />
+      <p id="description"></p>
+      <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+      <p><strong>Feels Like:</strong> <span id="feelsLike"></span>°C</p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+      <p><strong>Wind Speed:</strong> <span id="wind"></span> m/s</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
